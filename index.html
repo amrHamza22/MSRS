@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c751576c97.js" crossorigin="anonymous"></script>
+  <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Images & Videos search</title>
+</head>
+<body>
+    <div class="header">Image & Video Retrieval</div>
+    <div class="algorithm-select">
+      <label for="algorithm" class="form-select form-select mb-1" aria-label="Default select example">Choose your algoritm: </label>
+      <select name="algorithm" id="algorithms">
+        <option value="0">Mean color</option>
+        <option value="1">Histogram</option>
+        <option value="2">Color layout</option>
+      </select>
+    </div>
+    <div class="uploaded">
+      <p id="message"></p>
+      <img id="img" src="#" alt="your image">
+      <video id="video" src="#" alt="your video" controls></video>
+    </div>
+    <div class="button">
+      <input id="default-btn" type="file" hidden>
+      <a href="#" class="btn" id="Upload"><i class="fas fa-upload"></i> Upload</a>
+      <a href="#" class="btn" id="Search"><i class="fas fa-search"></i> Search</a>
+    </div>
+    <div class="container">
+      <ul class="output">
+      </ul>
+    </div>
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
